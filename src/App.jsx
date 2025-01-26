@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 
-import Header from './Component/Navigation/Header'
+
 import Layout from './HOC/Layout'
 import Recipies from './Pages/Services' 
 import Home from './Pages/Home'
@@ -21,16 +21,20 @@ function App() {
    
 
      <Routes>
-       <Route element={<Layout/>}></Route>
-      
+       <Route element={<Layout/>}>
 
-       <Route  path='/' element={<Home/>}></Route>
+       <Route  path='/'  element={<Home/>}></Route>
+       
        
        <Route path='/Recipes' element={<Recipies/>}></Route>
        <Route path='/Services' element={<Services/>}></Route>
        <Route path='/About' element={<About/>}></Route>
        <Route path='/News' element={<News/>}></Route>
        <Route path='/Contact' element={<Contact/>}></Route>
+       </Route>
+      
+
+      
      </Routes>
     </>
   )

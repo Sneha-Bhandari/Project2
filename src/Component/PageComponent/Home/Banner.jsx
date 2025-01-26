@@ -1,100 +1,57 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-const images = [
-  { image: "wall.jpg" },
-  { image: "wall1.jpg" },
-  { image: "wall2.jpg" },
-];
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const Banner = () => {
+function Banner() {
+  const images = [
+    {
+      image: "wall.jpg",
+      description: "Eat,Drink at Gourmet",
+      button: "Get Started",
+    },
+    { image: "wall1.jpg",
+    description: "Enjoy Delicious food at Gourmet",
+    button: "Get Started" },
+   
+  ];
+
   return (
-    <div className="relative">
-      {/* <Carousel 
-        additionalTransfrom={0}
-        arrows
-        autoPlaySpeed={3000}
-        centerMode={false}
-        className=""
-        containerClass="container"
-        dotListClass=""
-        draggable
-        focusOnSelect={false}
-        infinite
-        itemClass=""
-        keyBoardControl
-        minimumTouchDrag={80}
-        pauseOnHover
-        renderArrowsWhenDisabled={false}
-        renderButtonGroupOutside={false}
-        renderDotsOutside
-        responsive={{
-          desktop: {
-            breakpoint: {
-              max: 3000,
-              min: 1024
-            },
-            items: 1
-          },
-          mobile: {
-            breakpoint: {
-              max: 464,
-              min: 0
-            },
-            items: 1
-          },
-          tablet: {
-            breakpoint: {
-              max: 1024,
-              min: 464
-            },
-            items: 1
-          }
-        }}
-        rewind={false}
-        rewindWithAnimation={false}
-        rtl={false}
-        shouldResetAutoplay
-        showDots
-        sliderClass=""
-        slidesToSlide={1}
-        swipeable
-      >
-        {     
-    <img
-      src="wall.jpg"
-      style={{
-        display: 'block',
-        height: '100%',
-        margin: 'auto',
-        width: '100%'
-      }}
-    />        }
+    <div>
+      <div className="relative h-lvh w-full ">
+        <Carousel
+          autoPlay
+          interval={3000}
+          showStatus={false}
+          infiniteLoop
+          showThumbs={true}
+          // showIndicators={true}
+          // showStatus={true}
+          // showDots={true}
+          showArrows={false}
+        >
+          {images.map((val, index) => {
+            return (
+              <div key={index}>
+                <div>
+                  <img
+                    src={val.image}
+                    alt="image"
+                    className="w-screen h-screen object-cover"
+                  />
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white flex flex-col gap-4">
 
-        {images.map((val, i) => {
-          return (
-            <div key={i}>
-              <img className="w-full " src={val.image} alt="" />
-            </div>
-          );
-        })}
-      </Carousel> */}
-
-      
-       
-              <div>
-                  {images.map((val,i)=>{
-                     return(
-                         <div key={i}>
-                             <img  className='w-full h-full' src={val.image} alt="" />
-                         </div>
-                     )
-                    })}
-                 </div>
-            
-    
-
+                <div className="text-7xl font-bold mb-3 font-serif ">{val.description}</div>
+                <div className="uppercase border border-white  w-fit ml-60 px-3 py-2 hover:bg-white hover:text-black transition">{val.button}</div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </Carousel>
+        
+      </div>
     </div>
   );
-};
+}
 
 export default Banner;
