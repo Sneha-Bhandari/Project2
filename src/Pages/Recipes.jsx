@@ -1,13 +1,15 @@
 import React from "react";
-import Best from "../Component/PageComponent/Home/Best";
+
 
 import RecipeBanner from "../Component/PageComponent/Recipes/RecipeBanner";
+import Menu from "../Component/PageComponent/Home/Menu";
+
 
 const Recipes = () => {
   return (
     <div className="">
    <RecipeBanner/>
-   <Best/>
+ <Menu/>
     </div>
 
   );

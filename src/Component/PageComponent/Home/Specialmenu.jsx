@@ -41,9 +41,14 @@ const Specialmenu = () => {
             infiniteLoop
             showThumbs={false}
             showStatus={false}
-            interval={3000}
+           
             centerMode={false}
             centerSlidePercentage={50}
+            loop
+               
+                
+                
+                scrollAnimationDuration={1000}
           >
             {menuItems.map((val, i) => {
               return (

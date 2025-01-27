@@ -33,13 +33,13 @@ const Testimonial = () => {
         <div className='flex flex-col items-center py-24'>
 <div className='bg-orange-500 w-24 h-0.5 mb-6'></div>
        <h1 className='text-5xl font-serif font-semibold mb-12'>Testimonial</h1>
-       <div className=' h-auto w-1/2 rounded-sm shadow-lg p-8'>
+       <div className=' h-auto w-1/2 rounded-sm p-8'>
         <Carousel className='  h-full'
         showThumbs={false}
         showStatus={false}
         infiniteLoop
         autoPlay
-        interval={5000}
+        interval={2000}
         showArrows={false}
         renderDotsOutside={false}
         
