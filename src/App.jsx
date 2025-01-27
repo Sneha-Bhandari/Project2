@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom'
 
 
 import Layout from './HOC/Layout'
-import Recipies from './Pages/Services' 
+import Recipies from './Pages/Recipes' 
 import Home from './Pages/Home'
 import News from './Pages/News'
 import Contact from './Pages/Contact'
@@ -22,8 +22,8 @@ function App() {
 
      <Routes>
        <Route element={<Layout/>}>
-
        <Route  path='/'  element={<Home/>}></Route>
+
        
        
        <Route path='/Recipes' element={<Recipies/>}></Route>

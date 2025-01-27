@@ -20,7 +20,7 @@ const Footer1 = () => {
   ];
   return (
     <div className="bg-white">
-      <div className="h-1/2 mt-80 w-full grid grid-cols-3 gap-12 bg-lime-100 ">
+      <div className="h-1/2 mt-80 mb-7 w-full grid grid-cols-3 gap-12 bg-white ">
         <div className="grid grid-rows-3   mt-12 ml-12  font-serif justify-center">
           <div className="text-black  font-bold tracking-tighter  py-8">
             About Us

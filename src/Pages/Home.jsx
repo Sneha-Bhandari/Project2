@@ -5,6 +5,7 @@ import Best from "../Component/PageComponent/Home/Best";
 import Blog from "../Component/PageComponent/Home/Blog";
 import Testimonial from "../Component/PageComponent/Home/Testimonial";
 import Specialmenu from "../Component/PageComponent/Home/Specialmenu";
+import Menu from "../Component/PageComponent/Home/Menu";
 //import About from "../Pages/About";
 
 //import { Carousel } from "react-responsive-carousel";
@@ -17,6 +18,7 @@ const Home = () => {
       <Therestaurant/>
       <Best/>
       <Specialmenu/>
+      <Menu/>
       <Testimonial/>
       <Blog/>
     </div>

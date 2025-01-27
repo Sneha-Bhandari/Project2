@@ -12,14 +12,14 @@ const Header = () => {
   ];
 
   return (
-    <div className="absolute z-50 left-0 right-0 text-white">
+    <div className="absolute z-50 left-0 top-0  right-0 text-white">
       <div className="flex flex-row  items-center justify-between w-full mx-auto px-20 py-16">
         <div className="text-3xl font-serif font-semibold ">Gourmet</div>
         <div className="flex gap-4  text-lg tracking-tight ">
           {navitems.map((val, i) => {
             return (
               <div key={i} className="hover:text-[#FF7405] flex items-center">
-                <Link to={val.path}> {val.title}</Link>
+                <Link  to={val.path}> {val.title}</Link>
               </div>
             );
           })}
