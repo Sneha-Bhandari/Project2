@@ -57,12 +57,12 @@ const Menu = () => {
 ]
   return (
     <div >
-        <div className=' flex flex-col gap-6 justify-center items-center  py-12'>
+        <div className=' flex flex-col gap-6 justify-center items-center  mt-14'>
             <div className='bg-orange-500 w-24 h-0.5 rounded-lg'></div>
             <div className='text-5xl font-serif font-bold'>Our Menu</div>
         </div>
      
-     <div className='h-full gap-2 shadow-lg items-start justify-start grid  sm:grid-cols-3 lg:grid-cols-2  w-11/12 mx-auto mt-24 border '>
+     <div className='h-full gap-6 items-start justify-start grid  sm:grid-cols-3 lg:grid-cols-2  w-11/12 mx-auto mt-12  '>
       {images.map((val,i)=>{
         return(
      <div key={i} >

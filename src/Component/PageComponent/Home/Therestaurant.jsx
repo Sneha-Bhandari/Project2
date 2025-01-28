@@ -2,16 +2,36 @@ import React from "react";
 
 const Therestaurant = () => {
   return (
-    <div className="h-lvh  flex items-center justify-center ">
-        
-      <div className="  flex w-11/12 mx-auto mt-24  h-1/2 gap-24">
-        <img className="h-full w-full  " src="wall.jpg" alt="Food" />
+    <div className="h-screen flex items-center justify-center px-4 md:px-0">
+      <div className="flex flex-col md:flex-row w-11/12  max-w-6xl mx-auto mt-12 md:mt-24 h-auto md:h-1/2 gap-12 md:gap-24">
+        {/* Image Section */}
+        <img
+          className="w-full md:w-1/2 h-64 md:h-full object-cover rounded-lg"
+          src="wall.jpg"
+          alt="Food"
+        />
 
-        <div className=" flex flex-col  justify-center gap-8 tracking-tight">
-            <div className="w-20 h-0.5 bg-orange-500"></div>
-          <div className="font-bold text-5xl w-fit border-t-orange-500  font-serif"> <h1 className="">The Restaurant</h1></div>
-            <div className="flex flex-col text-gray-500 gap-5"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis maiores soluta officia quos, animi neque eius assumenda culpa distinctio libero,</p><p> Amet  voluptate harum ipsam alias sit totam soluta impedit.</p></div>
-          <img className='w-32 h-24' src="sign.svg" alt="" />
+        {/* Text Section */}
+        <div className="flex flex-col justify-center gap-6 md:gap-8 tracking-tight">
+          <div className="w-20 h-0.5 bg-orange-500 mx-auto md:mx-0"></div>
+          <h1 className="title">
+            The Restaurant
+          </h1>
+          <div className="description">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+              maiores soluta officia quos, animi neque eius assumenda culpa
+              distinctio libero,
+            </p>
+            <p>
+              Amet voluptate harum ipsam alias sit totam soluta impedit.
+            </p>
+          </div>
+          <img
+            className="w-24 h-16 md:w-32 md:h-24 mx-auto md:mx-0"
+            src="sign.svg"
+            alt="Signature"
+          />
         </div>
       </div>
     </div>

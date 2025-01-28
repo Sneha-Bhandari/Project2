@@ -27,13 +27,13 @@ const Chefs = () => {
     ]
 
   return (
-    <div className='h-lvh '>
-        <div className='flex flex-col gap-5 justify-center items-center   py-12'>
+    <div className='h-lvh my-12 '>
+        <div className='flex flex-col gap-5 justify-center items-center'>
       <div className='bg-orange-400 w-24 h-0.5'></div>
     <h1 className='text-5xl font-semibold font-serif'>Chefs</h1>
         </div>
-       <div className='  h-auto w-5/5 rounded-sm  flex justify-center items-center mx-auto mt-12  '>
-       <Carousel className=' p-8 '
+       <div className='  h-auto w-11/12 rounded-sm  flex justify-center items-center mx-auto mt-12  '>
+       <Carousel className='  '
   showIndicators={false}
   showArrows={true}
         showThumbs={false}

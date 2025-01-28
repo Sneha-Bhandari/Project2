@@ -30,11 +30,11 @@ const Testimonial = () => {
       
   return (
     <div className='h-lvh '>
-        <div className='flex flex-col items-center py-24'>
+        <div className='flex flex-col items-center  pt-24 gap-4'>
 <div className='bg-orange-500 w-24 h-0.5 mb-6'></div>
-       <h1 className='text-5xl font-serif font-semibold mb-12'>Testimonial</h1>
-       <div className=' h-auto w-1/2 rounded-sm p-8'>
-        <Carousel className='  h-full'
+       <h1 className='text-5xl font-serif font-semibold '>Testimonial</h1>
+       <div className=' h-full w-6/12  p-8  '>
+        <Carousel className=' '
         showThumbs={false}
         showStatus={false}
         infiniteLoop
@@ -46,14 +46,14 @@ const Testimonial = () => {
        >
             {testimonials.map((val,i)=>{
                 return (
-                    <div key={i} className=' flex flex-col '>
-                        <div className=' mb-6 text-xl font-normal -tracking-tighter p-6 text-left w-full'>"{val.quote}"</div>
-                       <div className='flex flex-row px-8'>
-                        <div className=''><img className='h-16 w-16 mr-5 rounded-full object-cover' src={val.image} alt="" /></div>
+                    <div key={i} className=' flex justify-center    h-full w-full flex-col  '>
+                        <div className=' mb-6 text-xl font-normal tracking-wide  p-6 text-justify w-full'>"{val.quote}"</div>
+                       <div className='flex flex-row  gap-3 mb-12 '>
+                        <div className='pl-6'><img className='h-16 w-16 mr-5 rounded-full object-cover' src={val.image} alt="" /></div>
                        
-                        <div className='flex flex-col gap-2 mb-12 mx-2'>
+                        <div className='flex flex-col items-start  gap-1 mb-12  '>
                             <h1 className='font-serif font-medium'>{val.name}</h1>
-                            <h2 className='w-48 text-gray-500 '>{val.position}</h2>
+                            <h2 className='  text-gray-500 '>{val.position}</h2>
                         </div>
                        </div>
                     </div>

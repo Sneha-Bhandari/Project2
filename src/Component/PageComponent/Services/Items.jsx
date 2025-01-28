@@ -53,8 +53,8 @@ const Items = () => {
 
     ]
   return (
-    <div className='h-lvh'>
-      <div className='grid grid-cols-4 gap-5 mx-auto w-10/12 h-full   justify-center items-center mt-24 ' >
+    <div className='h-lvh  '>
+      <div className='grid grid-cols-4 gap-5 mx-auto w-11/12 h-full  justify-center items-center mt-24 ' >
         {item.map((val,i)=>{
             return(
                 <div  key={i}>

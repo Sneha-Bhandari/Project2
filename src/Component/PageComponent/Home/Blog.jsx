@@ -21,15 +21,15 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="h-lvh relative ">
-      <div className="flex flex-col relative  items-center  gap-6 w-10/12 h-full mx-auto py-12">
+    <div className="h-lvh  ">
+      <div className="flex flex-col relative  mt-12 items-center  gap-6 w-11/12 h-full mx-auto py-12">
         <div className="bg-orange-500 w-24 h-[3px] rounded-full absolute top-3   "></div>
         <div>
-          <h1 className="font-bold font-serif text-5xl">Blog</h1>
+          <h1 className="font-bold font-serif  text-5xl">Blog</h1>
         </div>
 
         
-        <div className="grid grid-cols-2 gap-12">
+        <div className="grid grid-cols-2 mt-4 gap-12">
           {cards.map((val, i) => {
             return (
               <div key={i} className="bg-white shadow-xl rounded-lg ">

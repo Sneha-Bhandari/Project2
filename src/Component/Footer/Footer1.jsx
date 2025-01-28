@@ -19,13 +19,14 @@ const Footer1 = () => {
     { title: "Contact" },
   ];
   return (
-    <div className="bg-white">
-      <div className="h-1/2 mt-80 mb-7 w-full grid grid-cols-3 gap-12 bg-white ">
-        <div className="grid grid-rows-3   mt-12 ml-12  font-serif justify-center">
-          <div className="text-black  font-bold tracking-tighter  py-8">
+    <div className="bg-gray-100 py-12">
+     <div className=" w-10/12 mx-auto">
+     <div className=" w-full flex gap-12 ">
+        <div className="w-1/3 font-serif ">
+          <div className="text-black h-fit w-fit py-6 font-bold tracking-tighter">
             About Us
           </div>
-          <p className="text-gray-600">
+          <p className="text-gray-600 pb-6">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
             illum velit nisi numquam minus veritatis deleniti reprehenderit
             sequi.
@@ -34,15 +35,15 @@ const Footer1 = () => {
             {aboutus.map((val, i) => {
               return (
                 <div key={i}>
-                  <div className=" text-sm text-orange-500 ">{val.icons}</div>
+                  <div className=" text-xl text-orange-500 ">{val.icons}</div>
                 </div>
               );
             })}
           </div>
         </div>
 
-        <div className="flex flex-col py-8 mt-12 ml-12 px-4  gap-6 tracking-tight text-base ">
-          <h1 className="font-serif x font-bold">Opening Hour</h1>
+        <div className="w-1/3 flex flex-col py-6  px-4  gap-6 tracking-tight text-base ">
+          <h1 className="font-serif font-bold">Opening Hour</h1>
           <div className="flex flex-col ">
             <h1>Sunday-Thursday</h1>
             <h1 className="text-gray-600">5AM-10PM</h1>
@@ -66,7 +67,7 @@ const Footer1 = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-3  flex-col  mt-12 ml-24  py-6">
+        <div className="w-1/3 flex gap-3  pl-12 flex-col  py-6">
           <div className=" font-bold font-serif">Quick Links</div>
           {links.map((value, index) => {
             return <div key={index}>
@@ -75,13 +76,14 @@ const Footer1 = () => {
           })}
         </div>
       </div>
-      <div className="bg-white  flex gap-2 text-gray-600  justify-center p-12">
-        Copyright©2025 All rights reserved | This template is made with
-        <h1 className="text-xs py-2 gap-2 ">
+      <div className="flex gap-2 text-gray-600 mt-10 justify-center">
+        Copyright © 2025 All rights reserved | This template is made with
+        <h1 className="text-sm  py-2 gap-2 ">
           <FaRegHeart />
         </h1>
         by <a className='text-orange-500' href="www.collorlib.com">Colorlib</a>
       </div>
+     </div>
     </div>
   );
 };
