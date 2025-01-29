@@ -11,22 +11,22 @@ const Forms = () => {
     {
       name: "Name",
       type: "text",
-      placeholder: "",
+      placeholder: "Enter your Name",
     },
     {
       name: "Phone",
       type: "number",
-      placeholder: "",
+      placeholder: "Enter your Number",
     },
     {
       name: "Email",
       type: "email",
-      placeholder: "",
+      placeholder: "Enter your Email",
     },
     {
       name: " WriteMessage",
       type: "textarea",
-      placeholder: "",
+      placeholder: "Write a message",
     },
   ];
   const details = [
@@ -47,13 +47,13 @@ const Forms = () => {
               <Form className="flex flex-col gap-6">
                 {forming.map((field, i) => (
                   <div key={i}>
-                    <label className="text-gray-600 font-medium">{field.name}</label>
+                    <label className="text-gray-600 font-medium ">{field.name}</label>
                     <Field
                       as={field.type === "textarea" ? "textarea" : "input"}
                       name={field.name}
                       type={field.type}
                       placeholder={field.placeholder}
-                      className="w-full  border border-gray-300  px-4 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                      className="w-full resize-none border border-gray-300  px-4 py-2 mt-2 focus:outline-none focus:ring-2 focus:ring-orange-500"
                     />
                   </div>
                 ))}

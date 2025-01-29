@@ -4,6 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer1 = () => {
   const aboutus = [
@@ -19,11 +20,11 @@ const Footer1 = () => {
     { title: "Contact" },
   ];
   return (
-    <div className="bg-gray-100 py-12">
-     <div className=" w-10/12 mx-auto">
-     <div className=" w-full flex gap-12 ">
+    <div className="bg-gray-100 mt-24 py-12 ">
+     <div className=" w-11/12 flex  h-full justify-evenly px-12 flex-col gap-5 mx-auto">
+     <div className=" w-full flex gap-12  mt-12 ">
         <div className="w-1/3 font-serif ">
-          <div className="text-black h-fit w-fit py-6 font-bold tracking-tighter">
+          <div className="text-black h-fit w-fit  font-bold tracking-tighter">
             About Us
           </div>
           <p className="text-gray-600 pb-6">
@@ -42,16 +43,29 @@ const Footer1 = () => {
           </div>
         </div>
 
-        <div className="w-1/3 flex flex-col py-6  px-4  gap-6 tracking-tight text-base ">
+        <div className="w-1/3 flex flex-col  px-4  gap-6 tracking-tight text-base ">
           <h1 className="font-serif font-bold">Opening Hour</h1>
           <div className="flex flex-col ">
             <h1>Sunday-Thursday</h1>
             <h1 className="text-gray-600">5AM-10PM</h1>
           </div>
 
-          <div className="flex flex-col gap-2 mt-3 font-serif">
-            <h1 className="font-bold">Contact Info</h1>
-            <div>
+       
+        </div>
+        <div className="w-1/3 flex gap-3  pl-12 flex-col  ">
+          <div className=" font-bold font-serif">Quick Links</div>
+          {links.map((value, index) => {
+            return <div key={index}>
+             <Link to={'/'} className="text-orange-500">{value.title}</Link> 
+              </div>;
+          })}
+        </div>
+      </div>
+      <div>
+            <h1 className="font-bold ">Contact Info</h1>
+           <div className="flex flex-row gap-32  justify-start items-center mx-auto mt-3 font-serif">
+           <div className="flex  gap-10">
+           <div>
               <h1 className="font-medium">Address:</h1>
               <p className="text-gray-600">
                 34 Street Name, City Name Here, United States
@@ -65,18 +79,10 @@ const Footer1 = () => {
               <h1 className="font-medium">Email:</h1>
               <p className="text-gray-600">info@yourdomain.com</p>
             </div>
+           </div>
           </div>
-        </div>
-        <div className="w-1/3 flex gap-3  pl-12 flex-col  py-6">
-          <div className=" font-bold font-serif">Quick Links</div>
-          {links.map((value, index) => {
-            return <div key={index}>
-             <div className="text-orange-500">{value.title}</div> 
-              </div>;
-          })}
-        </div>
       </div>
-      <div className="flex gap-2 text-gray-600 mt-10 justify-center">
+      <div className="flex gap-2 text-gray-600 mt-10 justify-center  ">
         Copyright © 2025 All rights reserved | This template is made with
         <h1 className="text-sm  py-2 gap-2 ">
           <FaRegHeart />

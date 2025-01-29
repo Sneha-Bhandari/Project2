@@ -28,8 +28,8 @@ const Chefs = () => {
 
   return (
     <div className='h-lvh my-12 '>
-        <div className='flex flex-col gap-5 justify-center items-center'>
-      <div className='bg-orange-400 w-24 h-0.5'></div>
+        <div className='flex flex-col group gap-5 justify-center items-center'>
+      <div className='bg-orange-400 w-24 h-0.5 group-hover:w-1/2 transition-all duration-700 delay-75 ease-in-out'></div>
     <h1 className='text-5xl font-semibold font-serif'>Chefs</h1>
         </div>
        <div className='  h-auto w-11/12 rounded-sm  flex justify-center items-center mx-auto mt-12  '>
@@ -53,10 +53,10 @@ const Chefs = () => {
  
         {chef.map((val,i)=>{
             return(
-                <div className='flex flex-col m-2  rounded-md shadow-md' key={i}>
-                    <img className='h-80 w-44 object-cover mb-8' src={val.image} alt="" />
-                    <div className='text-xl font-bold font-serif'>{val.name}</div>
-                    <div className='text-gray-500 font-thin mb-4'>{val.post}</div>
+                <div className='flex flex-col m-2 overflow-clip group rounded-md shadow-md' key={i}>
+                    <img className='h-80 w-44 object-cover transition-all duration-700 delay-75 ease-in-out   group-hover:scale-110 mb-8' src={val.image} alt="" />
+                    <div className='text-xl font-bold font-serif transition-all duration-700 delay-75 ease-in-out   group-hover:scale-110'>{val.name}</div>
+                    <div className='text-gray-500 font-thin mb-4 transition-all duration-700 delay-75 ease-in-out   group-hover:scale-110'>{val.post}</div>
                 </div>
             )
         })}

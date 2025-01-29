@@ -30,10 +30,10 @@ const Testimonial = () => {
       
   return (
     <div className='h-lvh '>
-        <div className='flex flex-col items-center  pt-24 gap-4'>
-<div className='bg-orange-500 w-24 h-0.5 mb-6'></div>
+        <div className='flex flex-col items-center group overflow-clip pt-24 mt-6 gap-4'>
+<div className='bg-orange-500 w-24 h-0.5 mb-6 group-hover:w-1/2 transition-all duration-700 delay-75 ease-in-out'></div>
        <h1 className='text-5xl font-serif font-semibold '>Testimonial</h1>
-       <div className=' h-full w-6/12  p-8  '>
+       <div className=' h-full w-6/12 p-6  '>
         <Carousel className=' '
         showThumbs={false}
         showStatus={false}
@@ -46,12 +46,12 @@ const Testimonial = () => {
        >
             {testimonials.map((val,i)=>{
                 return (
-                    <div key={i} className=' flex justify-center    h-full w-full flex-col  '>
-                        <div className=' mb-6 text-xl font-normal tracking-wide  p-6 text-justify w-full'>"{val.quote}"</div>
-                       <div className='flex flex-row  gap-3 mb-12 '>
-                        <div className='pl-6'><img className='h-16 w-16 mr-5 rounded-full object-cover' src={val.image} alt="" /></div>
+                    <div key={i} className=' flex justify-center group overflow-clip   h-full w-full flex-col  '>
+                        <div className=' mb-6 text-xl font-normal tracking-wide  px-12 text-center overflow-clip w-full transition-all duration-700 delay-75 ease-in-out group-hover:p-3  group-hover:scale-100  '>"{val.quote}"</div>
+                       <div className='flex flex-row  justify-center gap-3 mb-12 transition-all duration-700 delay-75 ease-in-out   group-hover:scale-110  '>
+                        <div className='pl-6'><img className='h-16 w-16 mr-5 rounded-full object-cover transition-all duration-700 delay-75 ease-in-out   group-hover:scale-110 ' src={val.image} alt="" /></div>
                        
-                        <div className='flex flex-col items-start  gap-1 mb-12  '>
+                        <div className='flex flex-col items-start transition-all duration-700 delay-75 ease-in-out   group-hover:scale-110  gap-1 mb-12  '>
                             <h1 className='font-serif font-medium'>{val.name}</h1>
                             <h2 className='  text-gray-500 '>{val.position}</h2>
                         </div>

@@ -57,8 +57,8 @@ const Items = () => {
       <div className='grid grid-cols-4 gap-5 mx-auto w-11/12 h-full  justify-center items-center mt-24 ' >
         {item.map((val,i)=>{
             return(
-                <div  key={i}>
-                    <div className='  p-6 w-full h-full  flex flex-col gap-3'>
+                <div  key={i} className='group overflow-clip'>
+                    <div className='  p-6 w-full h-full group-hover:w-full group-hover:scale-110 transition-all duration-500 delay-75 ease-in-out flex flex-col gap-3'>
                     <div className='bg-orange-500  rounded-full w-fit h-fit p-6 text-white text-4xl' >{val.icon}</div>
                     <div className='text-orange-500 uppercase tracking-wide font-medium font-serif'>{val.title}</div>
                     <div className='text-gray-500 text-left text-base'>{val.description}</div>
