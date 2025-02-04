@@ -33,7 +33,7 @@ const Header = () => {
   ];
 
   return (
-    <div  className= { `fixed z-50 left-0 top-0  right-0 h-fit  transition-all duration-700 delay-75 ease-in-out   ${isScrolled=='middle' ? ' bg-gray-300    shadow-xl flex w-full -translate-y-10 items-end ':isScrolled=="inbetween"?"-translate-y-96":' bg-transparent'}`}>
+    <div  className= { `fixed z-50 left-0 top-0  right-0 h-fit  transition-all duration-700 delay-75 ease-in-out   ${isScrolled=='middle' ? ' bg-gray-300 pt-8  shadow-xl flex w-full -translate-y-10 items-end ':isScrolled=="inbetween"?"-translate-y-96":' bg-transparent'}`}>
       <div className="flex flex-row  items-center justify-between w-11/12 mx-auto  py-16">
         <div className="text-3xl font-serif text-white font-semibold ">Gourmet</div>
         <div className="flex gap-4  text-lg tracking-tight ">

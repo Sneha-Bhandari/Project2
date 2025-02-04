@@ -17,7 +17,7 @@ const Best = () => {
           </p>
         </div>
       </div>
-      <div className="flex w-full h-auto  justify-center   gap-6 ">
+      <div className="flex w-full h-auto  justify-center object-cover  gap-6 ">
         <div className="group w-72 overflow-clip  ">
           <img className="w-72 group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 delay-75 ease-in-out " src="food.jpg" alt="img" />
         </div>
@@ -25,9 +25,9 @@ const Best = () => {
         <div className="group w-72 overflow-clip ">
           <img className="w-72 group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 delay-75 ease-in-out" src="food1.jpg" alt="" />
         </div>
-        <div className="group  w-72 overflow-clip ">
+        <div className="group  overflow-clip ">
       
-          <img className="w-full group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 delay-75 ease-in-out " src="food2.jpg" alt="" />
+          <img className="w-72 group-hover:rotate-3 group-hover:scale-110 transition-all duration-500 delay-75 ease-in-out " src="food.jpg" alt="" />
         </div>
       </div>
     </div>

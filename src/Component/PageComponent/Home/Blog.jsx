@@ -47,7 +47,7 @@ const Blog = () => {
                   <div className="text-gray-400 font-light text-sm">{val.date}</div>
                   <div className="text-gray-500">{val.description}</div>
 
-                  <div className={`bg-orange-500 transition-all duration-700 delay-75 ease-in-out group-hover:bg-white group-hover:text-orange-500 border-orange-500 border w-fit h-fit px-6 py-2 text-white font-thin`}>{val.button}</div>
+                  <div className={`bg-orange-500 transition-all duration-700 delay-75 ease-in-out group-hover:bg-white group-hover:text-orange-500 border-orange-500 border w-fit  cursor-pointer h-fit px-6 py-2 text-white font-thin`}>{val.button}</div>
                 </div>
               </div>
             );
