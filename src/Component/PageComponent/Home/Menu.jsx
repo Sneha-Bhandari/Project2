@@ -76,7 +76,7 @@ const Menu = () => {
                 >
                 <div
                   className={`flex flex-col ${
-                    i < 2 || (i > 3 && i < 6) ? "order-first " : "order-last"
+                    i < 2 || (i > 3 && i < 6) ? "lg:order-first " : "lg:order-last"
                   } justify-center items-start p-2 gap-3`}
                   >
                   <div className="text-lg font-serif font-bold  ">

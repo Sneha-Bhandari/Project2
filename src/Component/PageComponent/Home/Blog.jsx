@@ -21,20 +21,20 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="h-lvh  ">
-      <div className="flex flex-col group overflow-clip w-1/2 h-1/3  items-center justify-center mx-auto gap-6">
+    <div className="md:h-lvh h-full flex flex-col gap-6">
+      <div className="flex flex-col group overflow-clip w-1/2 h-full  items-center justify-center mx-auto gap-6">
       <div className="w-24 group-hover:w-full transition-all duration-700 delay-75 ease-in-out bg-orange-500 h-0.5"></div>
-        <div className="font-bold font-serif text-5xl tracking-tight ">
+        <div className="font-bold font-serif text-5xl tracking-tight mb-3 ">
          Blog
         </div>
        </div>
 
 
         
-        <div className="grid grid-cols-2 h-fit pb-3  gap-4 px-12">
+        <div className="md:grid md:grid-cols-2 md:h-fit h-full w-full pb-3 gap-6 px-3 lg:px-12">
           {cards.map((val, i) => {
             return (
-              <div key={i} className="bg-white border overflow-clip group  shadow-md border-white hover:border-gray-200  rounded-lg ">
+              <div key={i} className="bg-white border overflow-clip group flex flex-col gap-12 my-6 lg:shadow-md border-white hover:border-gray-200  rounded-lg ">
                <div className="h-88 overflow-clip w-full">
                <img
                   src={val.image}

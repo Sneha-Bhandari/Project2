@@ -13,7 +13,7 @@ import Menu from "../Component/PageComponent/Home/Menu";
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div className="">
       <Banner/>
       <Therestaurant/>
       <Best/>

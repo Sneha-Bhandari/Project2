@@ -21,9 +21,9 @@ const Footer1 = () => {
   ];
   return (
     <div className="bg-gray-100 mt-24 py-12 ">
-     <div className=" w-11/12 flex  h-full justify-evenly px-12 flex-col gap-5 mx-auto">
-     <div className=" w-full flex gap-12  mt-12 ">
-        <div className="w-1/3 font-serif ">
+     <div className=" md:w-11/12 flex  h-full justify-evenly px-12 flex-col gap-5 mx-auto">
+     <div className=" md:w-full md:flex grid lg:grid-cols-3 w-full gap-12 md:mt-12 ">
+        <div className="lg:w-1/3 font-serif ">
           <div className="text-black h-fit w-fit  font-bold tracking-tighter">
             About Us
           </div>
@@ -43,7 +43,7 @@ const Footer1 = () => {
           </div>
         </div>
 
-        <div className="w-1/3 flex flex-col  px-4  gap-6 tracking-tight text-base ">
+        <div className="lg:w-1/3 flex flex-col  px-4  gap-6 tracking-tight text-base ">
           <h1 className="font-serif font-bold">Opening Hour</h1>
           <div className="flex flex-col ">
             <h1>Sunday-Thursday</h1>
@@ -52,7 +52,7 @@ const Footer1 = () => {
 
        
         </div>
-        <div className="w-1/3 flex gap-3  pl-12 flex-col  ">
+        <div className="lg:w-1/3 flex gap-3  lg:pl-12 flex-col  ">
           <div className=" font-bold font-serif">Quick Links</div>
           {links.map((value, index) => {
             return <div key={index}>
@@ -64,7 +64,7 @@ const Footer1 = () => {
       <div>
             <h1 className="font-bold ">Contact Info</h1>
            <div className="flex flex-row gap-32  justify-start items-center mx-auto mt-3 font-serif">
-           <div className="flex  gap-10">
+           <div className="flex flex-col lg:flex-row  gap-10">
            <div>
               <h1 className="font-medium">Address:</h1>
               <p className="text-gray-600">
