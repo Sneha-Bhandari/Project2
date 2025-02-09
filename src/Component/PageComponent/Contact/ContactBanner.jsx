@@ -4,8 +4,8 @@ const ContactBanner = () => {
   return (
     
       <div>
-    <div className="">
-      <img className="w-full" src="wallpaper2.jpg" alt="Image" />
+    <div className="md:h-full h-[100vh]">
+      <img className="w-full h-full object-cover" src="wallpaper2.jpg" alt="Image" />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center text-white flex flex-col gap-6 ">
         <div className="text-7xl font-bold  font-serif ">Contact Us</div>
         <div className="text-3xl font-thin">A delicious and tasty food</div>

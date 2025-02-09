@@ -34,14 +34,14 @@ const Header = () => {
   ];
 
   return (
-    <div  className= { `fixed z-50 left-0 top-0  right-0 h-fit p-6 transition-all duration-700 delay-75 ease-in-out   ${isScrolled=='middle' ? ' bg-gray-300  shadow-xl flex w-full  h-fit  items-end ':isScrolled=="inbetween"?" hidden":' bg-transparent'}`}>
+    <div  className= { `fixed z-50 left-0 top-0  right-0 h-fit p-6 transition-all duration-700 delay-75 ease-in-out   ${isScrolled=='middle' ? ' bg-[#f79e56]  shadow-xl flex w-full  h-fit  items-end ':isScrolled=="inbetween"?" hidden":' bg-transparent'}`}>
       <div className="flex flex-row  items-center justify-between w-11/12 mx-auto  ">
         <div className="text-3xl font-serif text-white font-semibold ">Gourmet</div>
         <div className="md:flex gap-4 hidden text-lg tracking-tight ">
           {navitems.map((val, i) => {
             return (
               <div  key={i} className="hover:text-[#FF7405] flex items-center "> 
-                <NavLink  to={val.path} className={({isActive}) => isActive ? 'text-[#FF7405]' : 'text-white'}> {val.title}</NavLink>
+                <NavLink  to={val.path} className={ ( {isActive}) => isActive ? 'text-orange-600 underline' : 'text-white'}> <div className="text-xl tracking-normal">{val.title}</div></NavLink>
               </div>
             );
           })}
@@ -53,7 +53,7 @@ const Header = () => {
         </div>
       </div>
       <div className="">{menuOpen && (
-        <div className="md:hidden flex flex-col bg-gray-300 w-full h-full px-5  text-start">
+        <div className="md:hidden flex flex-col bg-gray-200 w-full h-full px-5  text-start">
           {navitems.map((val, i) => (
             <NavLink
               key={i}

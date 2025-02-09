@@ -7,9 +7,12 @@ import Menu from "../Component/PageComponent/Home/Menu";
 
 const Recipes = () => {
   return (
-    <div className="">
-   <RecipeBanner/>
+    <div className="h-full w-full">
+  <div className="h-full"><RecipeBanner/></div> 
+   <div className="h-full">
  <Menu/>
+
+   </div>
     </div>
 
   );

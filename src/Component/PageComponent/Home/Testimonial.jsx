@@ -29,11 +29,11 @@ const Testimonial = () => {
       ];
       
   return (
-    <div className='h-lvh '>
-        <div className='flex w-full flex-col items-center group overflow-clip pt-24 mt-6 gap-4'>
+    <div className='h-full mb-6 mt-12 '>
+        <div className='flex w-full flex-col items-center group overflow-clip pt-24  gap-'>
 <div className='bg-orange-500 w-24 h-0.5 mb-6 group-hover:w-1/2 transition-all duration-700 delay-75 ease-in-out'></div>
        <h1 className='text-5xl font-serif font-semibold '>Testimonial</h1>
-       <div className=' h-full md:w-6/12 w-full p-6  '>
+       <div className='h-full md:w-6/12 w-full p-6 flex flex-col  '>
         <Carousel className=' '
         showThumbs={false}
         showStatus={false}
@@ -46,13 +46,13 @@ const Testimonial = () => {
        >
             {testimonials.map((val,i)=>{
                 return (
-                    <div key={i} className=' flex justify-center group overflow-clip   h-full w-full flex-col  '>
+                    <div key={i} className=' md:flex md:justify-center group  overflow-clip    md:h-full md:w-full flex-col '>
                         <div className=' mb-6 text-xl font-normal tracking-wide  px-12 text-center overflow-clip  '>"{val.quote}"</div>
-                       <div className='flex flex-col lg:flex-row  justify-center gap-3   '>
-                        <div className='  '>
-                          <img className='md:h-20 md:w-20 h-9 w-9 md:mr-5 md:rounded-full   rounded-full  ' src={val.image} alt="" /></div>
+                       <div className='flex flex-col  mb-24 lg:flex-row justify-center  gap-6   '>
+                        <div className=' h-9 w-9 rounded-full md:h-16 md:w-16  '>
+                          <img className='rounded-full object-cover shadow-lg border-2 border-orange-500 ' src={val.image} alt="" /></div>
           
-                        <div className='flex flex-col items-start  gap-1 mb-12  '>
+                        <div className='flex flex-col items-start  gap-1   '>
                             <h1 className='font-serif font-medium'>{val.name}</h1>
                             <h2 className='  text-gray-500 '>{val.position}</h2>
                         </div>
