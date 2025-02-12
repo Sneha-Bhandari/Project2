@@ -34,7 +34,7 @@ const Header = () => {
   ];
 
   return (
-    <div  className= { `fixed z-50 left-0 top-0  right-0 h-fit p-6 transition-all duration-700 delay-75 ease-in-out   ${isScrolled=='middle' ? ' bg-[#f79e56]  shadow-xl flex w-full  h-fit  items-end ':isScrolled=="inbetween"?" hidden":' bg-transparent'}`}>
+    <div  className= { `fixed z-50 left-0 top-0  right-0 h-fit p-6 transition-all duration-700 delay-75 ease-in-out   ${isScrolled=='middle' ? ' bg-[#e9c8ad]  shadow-xl flex w-full  h-fit  items-end ':isScrolled=="inbetween"?" hidden":' bg-transparent'}`}>
       <div className="flex flex-row  items-center justify-between w-11/12 mx-auto  ">
         <div className="text-3xl font-serif text-white font-semibold ">Gourmet</div>
         <div className="md:flex gap-4 hidden text-lg tracking-tight ">
@@ -46,14 +46,21 @@ const Header = () => {
             );
           })}
         </div>
-        <div className="flex text-5xl md:hidden text-white"
+        <div   className="md:hidden">
+        <button className="flex text-5xl text-white"
         onClick={() => setMenuOpen(!menuOpen)}>
-        <IoReorderThreeOutline/>
+       <IoReorderThreeOutline/>
        
+        </button>
         </div>
       </div>
-      <div className="">{menuOpen && (
-        <div className="md:hidden flex flex-col bg-gray-200 w-full h-full px-5  text-start">
+     
+        {menuOpen && (
+        <div onClick={(e) => e.stopPropagation()} className=" md:hidden absolute bg-white  flex flex-col w-1/2 text-xl right-0 h-fit px-5   text-start">
+          
+         <div className="text-right">
+         <button onClick={()=>setMenuOpen(false)} className="text-3xl">x</button>
+         </div> 
           {navitems.map((val, i) => (
             <NavLink
               key={i}
@@ -69,7 +76,7 @@ const Header = () => {
             </NavLink>
           ))}
         </div>
-      )}</div>
+      )}
     </div>
     
   );

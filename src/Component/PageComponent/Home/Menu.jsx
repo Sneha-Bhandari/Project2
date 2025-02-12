@@ -67,12 +67,12 @@ const Menu = () => {
           <div className="text-5xl font-serif w-fit font-bold">Our Menu</div>
         </div>
 
-      <div className="h-full items-start justify-start grid  sm:grid-cols-3 lg:grid-cols-2  w-11/12 mx-auto mt-12  ">
+      <div className="h-full items-start justify-start grid gap-8 lg:gap-0  sm:grid-cols-3 lg:grid-cols-2  w-11/12 mx-auto mt-12  ">
         {images.map((val, i) => {
           return (
             <div key={i} className="overflow-clip group hover:border-gray-200">
               <div
-                className={`grid grid-cols-2   justify-center items-center `}
+                className={`lg:grid flex flex-col-reverse lg:grid-cols-2   justify-center items-center `}
                 >
                 <div
                   className={`flex flex-col ${

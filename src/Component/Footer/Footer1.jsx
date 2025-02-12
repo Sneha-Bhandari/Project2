@@ -43,7 +43,7 @@ const Footer1 = () => {
           </div>
         </div>
 
-        <div className="lg:w-1/3 flex flex-col  px-4  gap-6 tracking-tight text-base ">
+        <div className="lg:w-1/3 flex flex-col  gap-6 tracking-tight text-base ">
           <h1 className="font-serif font-bold">Opening Hour</h1>
           <div className="flex flex-col ">
             <h1>Sunday-Thursday</h1>

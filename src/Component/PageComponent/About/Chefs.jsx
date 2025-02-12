@@ -26,51 +26,53 @@ const Chefs = () => {
   ];
 
   return (
-    <div className="h-auto my-12">
-      {/* Section Title */}
-      <div className="flex flex-col group gap-5 justify-center items-center">
+   
+    <div className="h-screen flex flex-col w-11/12 mx-auto  items-center justify-center bg-white">
+          <div className="flex flex-col group gap-5 justify-center items-center">
         <div className="bg-orange-400 w-24 h-0.5 group-hover:w-1/2 transition-all duration-700 ease-in-out"></div>
-        <h1 className="text-4xl md:text-5xl font-semibold font-serif">Chefs</h1>
+        <h1 className="text-5xl font-semibold font-serif">Chefs</h1>
       </div>
 
-      {/* Carousel */}
-      <div className="h-auto w-full md:w-11/12 mx-auto mt-12">
-        <Carousel
-          showIndicators={false}
-          showArrows={true}
-          showThumbs={false}
-          showStatus={false}
-          infiniteLoop={true}
-          autoPlay={true}
-          interval={3000}
-          stopOnHover={true}
-          centerMode={true}
-          centerSlidePercentage={100 / 3} // Adjust for 3 slides
-        >
-          {chef.map((val, i) => (
-            <div
-              className="flex flex-col items-center p-4 group rounded-md shadow-lg transition-transform duration-500 ease-in-out"
-              key={i}
-            >
-              {/* Chef Image */}
-              <img
-                className="h-64 md:h-80 w-40 md:w-44 lg:w-48 object-cover rounded-md transition-transform duration-500 ease-in-out group-hover:scale-110 mb-4"
-                src={val.image}
-                alt={val.name}
-              />
-              {/* Chef Name */}
-              <div className="text-lg md:text-xl font-bold font-serif transition-transform duration-500 ease-in-out group-hover:scale-105">
-                {val.name}
-              </div>
-              {/* Chef Position */}
-              <div className="text-gray-500 font-light text-sm md:text-base mb-2 transition-transform duration-500 ease-in-out group-hover:scale-105">
-                {val.post}
-              </div>
+            <div className="w-full h-2/3 bg-red-300 overflow-clip flex items-center  justify-center">
+                <Carousel className=''
+                    autoPlay  
+                    interval={3000}  
+                    infiniteLoop  
+                    showArrows={false}
+                    showStatus={false}
+                    showThumbs={false}
+                    centerMode
+                    centerSlidePercentage={33.33}
+                    stopOnHover={false}
+                    
+                >
+
+                    {chef.map((person, index) => (
+                        <div key={index} className="flex flex-col items-center mb-10">
+                            <div className="w-64 h-64   overflow-hidden mb-6 ">
+                                <img
+                                    src={person.image}
+                                    alt={person.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h4 className="text-xl font-semibold mt-4">{person.name}</h4>
+                            <p className="text-center w-full text-gray-600 text-lg px-8">
+                                {person.post}
+                            </p>
+                           
+                        </div>
+                    ))}
+
+                </Carousel>
             </div>
-          ))}
-        </Carousel>
-      </div>
-    </div>
+        </div>
+      
+     
+
+      
+     
+      
   );
 };
 

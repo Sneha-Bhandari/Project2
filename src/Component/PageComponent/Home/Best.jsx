@@ -2,9 +2,9 @@ import React from "react";
 
 const Best = () => {
   return (
-    <div className="h-1/2 py-9 md:h-lvh">
-      <div className="flex flex-col group overflow-clip w-full px-3 h-1/3  items-center justify-center mx-auto gap-6">
-        <div className="w-24 group-hover:w-full transition-all duration-700 delay-75 ease-in-out bg-orange-500 h-0.5"></div>
+    <div className="h-1/2 relative py-9 md:h-lvh">
+      <div className="flex flex-col group overflow-clip w-full px-3 h-1/3  items-center justify-center mx-auto gap-2">
+        <div className="w-24 group-hover:w-64 transition-all duration-700 delay-75 ease-in-out bg-orange-500 h-0.5"></div>
         <div className="font-bold font-serif text-3xl md:text-5xl tracking-tight ">
           Best & Good
         </div>
