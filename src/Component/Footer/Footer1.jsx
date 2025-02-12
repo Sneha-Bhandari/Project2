@@ -20,7 +20,7 @@ const Footer1 = () => {
     { title: "Contact" },
   ];
   return (
-    <div className="bg-gray-100 mt-24 py-12 ">
+    <div className="bg-gray-100  py-12 ">
      <div className=" md:w-11/12 flex  h-full justify-evenly px-12 flex-col gap-5 mx-auto">
      <div className=" md:w-full md:flex grid lg:grid-cols-3 w-full gap-12 md:mt-12 ">
         <div className="lg:w-1/3 font-serif ">

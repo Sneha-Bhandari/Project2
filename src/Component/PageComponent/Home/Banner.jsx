@@ -22,7 +22,7 @@ function Banner() {
       <div className="relative h-lvh w-full ">
         <Carousel
           autoPlay
-          interval={3000}
+          interval={1000}
           showStatus={false}
           infiniteLoop
           showThumbs={true}
@@ -37,10 +37,10 @@ function Banner() {
                   <img
                     src={val.image}
                     alt="image"
-                    className="w-screen h-screen object-cover"
+                    className="w-screen h-screen object-cover "
                   />
-                  <div className="absolute  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white flex flex-col items-center justify-center gap-4 mt-16">
-                    <div className="md:text-7xl text-5xl font-bold mb-3 font-serif ">
+                  <div className="absolute md:w-1/2  md:left-1/4 top-1/2 px-6  justify-center items-center  text-center text-white flex flex-col gap-4">
+                    <div className="md:text-6xl text-4xl font-bold mb-3 font-serif">
                       {val.description}
                     </div>
                     <Link

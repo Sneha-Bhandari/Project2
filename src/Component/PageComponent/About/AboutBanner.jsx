@@ -1,21 +1,33 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const AboutBanner = () => {
+const Ourservices = () => {
   return (
-    <div>
-      <div className="relative h-[100vh] md:h-full">
-        <img className="w-full h-full object-cover " src="wallpaper2.jpg" alt="Image" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center text-white flex flex-col gap-6 ">
-          <div className="text-7xl font-bold  font-serif ">About Gourmet</div>
-          <div className="text-3xl font-thin">A delicious and tasty food</div>
-          <div className="uppercase border border-white  w-fit  px-3 py-2 hover:bg-white hover:text-black transition">
-            Get Started
-          </div>
-        </div>
-      </div>
-   
-    </div>
-  )
-}
+    <div className="relative h-[100vh] md:h-full">
+      <img
+        className="w-full h-full object-cover"
+        src="wall.jpg"
+        alt="Our Services"
+      />
 
-export default AboutBanner
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white gap-4 px-4">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold font-serif">
+          About Gourmet
+        </h1>
+
+        <p className="text-lg sm:text-xl lg:text-2xl font-light">
+          A delicious and tasty food
+        </p>
+
+        <Link
+          to={"/"}
+          className="uppercase  border border-white  w-fit  px-3 py-2  hover:bg-white hover:text-black  transition-all duration-700 delay-75 ease-in-out"
+        >
+          Get Started
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Ourservices;

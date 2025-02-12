@@ -21,8 +21,8 @@ const Blog = () => {
     },
   ];
   return (
-    <div className="md:h-lvh h-full flex flex-col gap-6">
-      <div className="flex flex-col group overflow-clip w-1/2 h-full  items-center justify-center mx-auto gap-6">
+    <div className="md:lvh h-full flex flex-col py-6 gap-6">
+      <div className="flex flex-col group overflow-clip w-1/2 h-full  items-center justify-center mx-auto gap-6 mt-6">
       <div className="w-24 group-hover:w-full transition-all duration-700 delay-75 ease-in-out bg-orange-500 h-0.5"></div>
         <div className="font-bold font-serif text-5xl tracking-tight mb-3 ">
          Blog

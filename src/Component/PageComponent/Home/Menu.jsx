@@ -60,7 +60,7 @@ const Menu = () => {
     },
   ];
   return (
-    <div className=" ">
+    <div className="h-full w-full flex flex-col mx-auto gap-3 mb-3 ">
 
         <div className=" flex flex-col gap-6 justify-center items-center group overflow-clip mt-14">
           <div className="bg-orange-500 w-24 h-0.5 rounded-lg group-hover:w-1/2 group-hover:scale-110 transition-all duration-500 delay-75 ease-in-out"></div>

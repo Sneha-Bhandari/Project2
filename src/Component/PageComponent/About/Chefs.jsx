@@ -27,14 +27,14 @@ const Chefs = () => {
 
   return (
    
-    <div className="h-screen flex flex-col w-11/12 mx-auto  items-center justify-center bg-white">
+    <div className="h-full gap-12 flex flex-col  items-center justify-center bg-white mt-8 mb-8">
           <div className="flex flex-col group gap-5 justify-center items-center">
         <div className="bg-orange-400 w-24 h-0.5 group-hover:w-1/2 transition-all duration-700 ease-in-out"></div>
         <h1 className="text-5xl font-semibold font-serif">Chefs</h1>
       </div>
 
-            <div className="w-full h-2/3 bg-red-300 overflow-clip flex items-center  justify-center">
-                <Carousel className=''
+            <div className="w-11/12 h-full  flex items-center  justify-center">
+                <Carousel className='md:w-full w-fit  '
                     autoPlay  
                     interval={3000}  
                     infiniteLoop  
@@ -49,7 +49,7 @@ const Chefs = () => {
 
                     {chef.map((person, index) => (
                         <div key={index} className="flex flex-col items-center mb-10">
-                            <div className="w-64 h-64   overflow-hidden mb-6 ">
+                            <div className="w-64 h-64   overflow-hidden md:mb-6 ">
                                 <img
                                     src={person.image}
                                     alt={person.name}

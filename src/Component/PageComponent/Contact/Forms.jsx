@@ -50,14 +50,14 @@ const Forms = () => {
       .required("Email is required"),
     WriteMessage: Yup.string()
       .required("Message is required")
-      .min(10, "Message must be at least 10 characters"),
+      .min(30, "Message must be at least 30 characters"),
   });
 
   return (
     <div className="h-auto py-12 bg-gray-50">
       <div className="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-16 w-11/12 mx-auto">
         {/* Form Section */}
-        <div className="bg-white shadow-md p-6 rounded-md w-full md:w-1/2">
+        <div className="md:bg-white md:shadow-md md:p-6 md:rounded-md w-full md:w-1/2">
           <Formik
             initialValues={{
               Name: "",
