@@ -88,7 +88,7 @@ const Header = () => {
       {menuOpen && (
         <div
           ref={menuRef}
-          className=" md:hidden absolute bg-white flex flex-col w-1/2 text-xl right-1 h-fit px-5 top-1  text-start"
+          className=" md:hidden absolute bg-white flex flex-col w-1/2 text-xl right-0 h-fit px-5 top-0   text-start"
         >
           <div className="text-right">
             <button
