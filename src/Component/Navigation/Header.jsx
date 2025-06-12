@@ -39,6 +39,7 @@ const Header = () => {
 
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [menuOpen]);
+  
   const navitems = [
     { title: "Home", path: "/" },
     { title: "Recipes", path: "/Recipes" },
